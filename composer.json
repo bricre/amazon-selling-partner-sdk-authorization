@@ -1,6 +1,5 @@
 {
   "name": "bricre/amazon-selling-partner-sdk-authorization",
-  "version": "v1",
   "description": "API client generated from OpenAPI definition from Amazon Selling Partner API for Authorization",
   "minimum-stability": "stable",
   "license": "Apache-2.0",
