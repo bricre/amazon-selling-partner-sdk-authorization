@@ -2,7 +2,7 @@
 
 namespace Amz\Authorization\Model;
 
-use OpenAPI\Runtime\AbstractModel as AbstractModel;
+use OpenAPI\Runtime\AbstractModel;
 
 /**
  * A Login with Amazon (LWA) authorization code.

@@ -2,8 +2,7 @@
 
 namespace Amz\Authorization\Api;
 
-use Amz\Authorization\Model\GetAuthorizationCodeResponse as GetAuthorizationCodeResponse;
-use OpenAPI\Runtime\AbstractAPI as AbstractAPI;
+use Amz\Authorization\Model\GetAuthorizationCodeResponse;
 
 class Authorization extends AbstractAPI
 {
@@ -41,10 +40,13 @@ class Authorization extends AbstractAPI
      */
     public function getCode(array $queries = []): GetAuthorizationCodeResponse
     {
-        return $this->client->request('getAuthorizationCode', 'GET', 'authorization/v1/authorizationCode',
-            [
-                'query' => $queries,
-            ]
+        return $this->request(
+        'getAuthorizationCode',
+        'GET',
+        'authorization/v1/authorizationCode',
+        null,
+        $queries,
+        []
         );
     }
 }
